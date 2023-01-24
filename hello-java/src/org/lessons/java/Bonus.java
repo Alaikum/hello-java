@@ -1,5 +1,7 @@
 package org.lessons.java;
 
+import java.util.Scanner; // Import the Scanner class
+
 public class Bonus {
 	public static void main(String[] args) {
 		System.out.println("Benvenuto al primo progetto, Bonus-Java");
@@ -14,6 +16,23 @@ public class Bonus {
 		char letter = 'A';
 		boolean bool = true;
 		System.out.println(num + " " + floatNum + " " + letter + " " + bool + " ");
+
+		Scanner myObj1 = new Scanner(System.in);
+		int num1;
+		Scanner myObj2 = new Scanner(System.in);
+		int num2;
+
+		// Controllo due valori numerici
+		System.out.println("Inserisci il primo numero");
+		num1 = myObj1.nextInt();
+		System.out.println("Inserisci il secondo numero");
+		num2 = myObj2.nextInt();
+		int sum = num1 + num2;
+		if (sum % 2 == 0) {
+			System.out.println("La somma dei numeri " + num1 + " e " + num2 + " è pari");
+		} else {
+			System.out.println("La somma dei numeri " + num1 + " e " + num2 + " è dispari");
+		}
 
 	}
 }
